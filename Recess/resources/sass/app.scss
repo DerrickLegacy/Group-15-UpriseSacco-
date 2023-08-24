@@ -1,0 +1,128 @@
+// Fonts
+@import url("https://fonts.bunny.net/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.profile-avatar {
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #fe5337;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 250px calc(100% - 250px);
+}
+
+.main-content {
+    min-height: 100vh;
+    padding: 2.5rem 1rem 0.75rem 1rem;
+}
+
+ul.sidebar-nav {
+    padding: 0 10px;
+}
+
+.card {
+    box-shadow: 2px 3px 6px rgba(209, 209, 209, 0.5) !important;
+    border-color: #e2e2e2 !important;
+}
+
+.dotted {
+    border: 2px dotted rgb(200, 200, 200) !important;
+}
+
+.rounded-5 {
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.h-300 {
+    height: 300px;
+}
+
+.text-xl {
+    font-size: 4rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.hover-bg-slate:hover {
+    background: #efefef;
+    cursor: pointer;
+}
+
+.btn-absolute {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+// Navbar-------------------------------------------
+
+// Sidebar--------------------------------------------
+.sidebar {
+    border-right: 1px solid #e2e2e2;
+}
+
+ul.sidebar-nav li {
+    list-style: none !important;
+}
+
+ul.sidebar-nav li a {
+    text-decoration: none;
+    padding: 0.6rem 0.5rem;
+    display: block;
+    color: inherit;
+}
+
+ul.sidebar-nav li a.active {
+    background-color: #fe5337;
+    color: #fff !important;
+}
+
+ul.sidebar-nav li a:hover {
+    background-color: rgba(254, 82, 55, 0.478);
+}
+
+// Footer
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 6rem;
+}
+
+.footer-box {
+    flex: 1 1 14rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.footer-box a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) {
+    .main-wrapper {
+        grid-template-columns: 1fr;
+    }
+}

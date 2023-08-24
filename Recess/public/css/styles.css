@@ -1,0 +1,16 @@
+.main-bg{
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 75vh;
+    background-position: center center;
+}
+
+.main-bg .content{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    text-align: right;
+}

@@ -1,0 +1,8 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "mysql-connector-java-8.0.26.jar"
+  ],
+  "breadcrumbs.enabled": false,
+  "workbench.editor.highlightModifiedTabs": true
+}
